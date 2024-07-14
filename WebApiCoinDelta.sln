@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCoinDelta", "WebApiCoinDelta\WebApiCoinDelta.csproj", "{EC438CF6-4BC9-4B04-999F-CD8FB52E80E8}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9FBDF14D-2667-4F18-864E-F746E867A209}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC438CF6-4BC9-4B04-999F-CD8FB52E80E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC438CF6-4BC9-4B04-999F-CD8FB52E80E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC438CF6-4BC9-4B04-999F-CD8FB52E80E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC438CF6-4BC9-4B04-999F-CD8FB52E80E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBDF14D-2667-4F18-864E-F746E867A209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBDF14D-2667-4F18-864E-F746E867A209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBDF14D-2667-4F18-864E-F746E867A209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBDF14D-2667-4F18-864E-F746E867A209}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C71DB7CB-1B93-4052-ABDD-BCD7AAAA0BEC}
+	EndGlobalSection
+EndGlobal

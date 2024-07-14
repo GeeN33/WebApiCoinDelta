@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  webapicoindelta:
+    image: ${DOCKER_REGISTRY-}webapicoindelta
+    build:
+      context: .
+      dockerfile: WebApiCoinDelta/Dockerfile
+    
+    ports: 
+        - "8080:8080" 

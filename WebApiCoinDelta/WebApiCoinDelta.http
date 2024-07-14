@@ -1,0 +1,6 @@
+@WebApiCoinDelta_HostAddress = http://localhost:5210
+
+GET {{WebApiCoinDelta_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
