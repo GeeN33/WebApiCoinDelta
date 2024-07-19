@@ -98,7 +98,7 @@ public class CoinsController : Controller
 
         var sql = $"SELECT * FROM bar_coin " +
             $"WHERE exchange = @exchange AND symbol = @symbol AND per = @per AND isspot = @isspot " +
-            $"ORDER BY per DESC ";
+            $"ORDER BY index DESC ";
 
         var quotescoin = await db.QueryAsync<BarCoin>(sql, coin);
 
