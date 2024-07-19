@@ -49,7 +49,7 @@ public class InfoCoinController : Controller
 
         var sql = $"SELECT * FROM bar_coin" +
             $" WHERE exchange = @exchange AND symbol = @symbol AND per = @per AND isspot = @isspot " +
-            $"ORDER BY index DESC";
+            $"ORDER BY index ";
 
         var barCoinLoppedList = await db.QueryAsync<BarCoinLopped>(sql, coin);
 
