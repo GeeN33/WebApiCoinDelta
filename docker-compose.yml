@@ -3,6 +3,7 @@ version: '3.4'
 services:
   webapicoindelta:
     image: ${DOCKER_REGISTRY-}webapicoindelta
+    restart: always
     build:
       context: .
       dockerfile: WebApiCoinDelta/Dockerfile
