@@ -11,7 +11,7 @@ namespace WebApiCoinDelta.Controllers;
 
 
 [ApiController]
-[Route("spot/symbols/")]
+[Route("/spot/symbols/")]
 public class SpotCoinController : Controller
 {
     private readonly IDbConnection db;
