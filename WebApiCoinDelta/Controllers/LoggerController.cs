@@ -37,7 +37,7 @@ public class LoggerController : Controller
     public async Task<IActionResult> GetLoggers()
     {
 
-        var sql = $"SELECT * FROM logger_coin";
+        var sql = $"SELECT * FROM logger_coin ORDER BY createdat DESC";
 
         var quotescoin = await db.QueryAsync<Logger>(sql);
 
