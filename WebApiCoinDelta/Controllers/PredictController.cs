@@ -45,30 +45,28 @@ public class PredictController : Controller
             m = 5;
         }
 
+        string sql = "";
+
+        var coin = new BarCoin { Exchange = exchange, Per = m };
+
         if (isspot)
         {
-            var coin = new BarCoinLopped { Exchange = exchange, Per = m };
 
-            var sql = $"SELECT * FROM bar_coin_spot" +
+            sql = $"SELECT * FROM bar_coin_spot" +
                 $" WHERE exchange = @exchange AND per = @per";
-
-            var barCoinLoppedList = await db.QueryAsync<BarCoinLopped>(sql, coin);
-
-            return Ok(barCoinLoppedList);
 
         }
         else
         {
 
-            var coin = new BarCoin { Exchange = exchange, Per = m };
-
-            var sql = $"SELECT * FROM bar_coin " +
+            sql = $"SELECT * FROM bar_coin " +
                 $"WHERE exchange = @exchange AND per = @per";
 
-            var quotescoin = await db.QueryAsync<BarCoin>(sql, coin);
-
-            return Ok(quotescoin);
         }
+
+        var quotescoin = await db.QueryAsync<BarCoin>(sql, coin);
+
+        return Ok(quotescoin);
 
     }
 
